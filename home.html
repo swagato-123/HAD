@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+<!--    responsive background image using css-->
+    <style>
+      body {
+      background-image: url("./static/fback.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a style="color:white" class="navbar-brand" href="#">SWAG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color:white" class="nav-link active" aria-current="page" href="#"></a>
+        </li>
+
+        <li class="nav-item">
+          <a style="color:Green" class="nav-link" href="/my" tabindex="-1" aria-disabled="true">StartYourCamera</a>
+        </li>
+
+        <li class="nav-item">
+          <a style="color:Yellow" class="nav-link" tabindex="-1" aria-disabled="true" onclick="cam()" type="button">Recorded_Video</a>
+        </li>
+
+<!--        <li class="nav-item">-->
+<!--          <button style="color:Green" class="nav-link" tabindex="-1" aria-disabled="true" onclick="cam()">StartYourCamera</button>-->
+<!--        </li>-->
+
+        <li class="nav-item">
+          <a style="color:white" class="nav-link" href="/">Logout</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<br>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+
+<!--  <div id="s" style="display:none" src="/my">sc</div>-->
+<!--  <script>-->
+<!--    function cam()-->
+<!--    {-->
+<!--    var x = document.getElementById("s");-->
+<!--    if(x.style.display === "none")-->
+<!--    {-->
+<!--    x.style.display="block";-->
+<!--    }-->
+<!--    else-->
+<!--    {-->
+<!--    x.style.display="none";-->
+<!--    }-->
+<!--    }-->
+<!--  </script>-->
+
+<!--<video width="320" height="240" controls>-->
+<!--  <source src="movie.mp4" type="video/mp4">-->
+<!--  <source src="movie.ogg" type="video/ogg">-->
+<!--</video>-->
+
+
+
+
+    <center>
+    <div id="s" style="display:none" >
+        <figure id="video_player">
+	<video controls poster="nambia1.jpg">
+		<source src="nambia1.mp4" type="video/mp4">
+		<source src="nambia1.webm" type="video/webm">
+	</video>
+	<figcaption>
+		<a href="nambia1.mp4"><img src="nambia1.jpg" alt="Nambia Timelapse 1"></a>
+		<a href="nambia2.mp4"><img src="nambia2.jpg" alt="Nambia Timelapse 2"></a>
+		<a href="nambia3.mp4"><img src="nambia3.jpg" alt="Nambia Timelapse 3"></a>
+	</figcaption>
+      </figure>
+    </center>
+    </div>
+  <script>
+    function cam()
+    {
+    var x = document.getElementById("s");
+    if(x.style.display === "none")
+    {
+    x.style.display="block";
+    }
+    else
+    {
+    x.style.display="none";
+    }
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+<!--<div class="body2">-->
+<!--  <div style="text-align:center">-->
+<!--  <h2>Human Fall Detection</h2>-->
+<!--  <p></p>-->
+<!--</div>-->
+
+<!-- The App Section -->
+<div class="container2">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:#c83200"><b>Human Fall Detection</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why use it?</b></h1>
+      <p> Human fall is one of the very critical health issues, especially for elders and disabled people living alone. The number of elder populations is increasing steadily worldwide. Therefore, human fall detection is becoming an effective technique for assistive living for those people. For assistive living, deep learning and computer vision have been used largely.</p>
+      <!--<button class="button">Download Application</button>-->
+    </div>
+    <div class="column-33">
+        <img src="/static/fall1.png" width="835" height="471">
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="container2">
+  <div class="row">
+    <div class="column-33">
+      <img src="/static/fall2.png" alt="App" width="835" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:#c83200"><b>Advantage</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Let's Read</b></h1>
+      <p> 1. Fall Alert Systems activate an alarm when a senior is in distress even if the senior cannot activate the alarm.
+
+2. Automatic fall detection technology addresses the problem of being unable to push a button in a fall and can significantly reduce the mortality rate from falls by providing a response as part of a medical emergency response system, such as the Duo System from MobileHelp.
+
+3. Fall Alert Systems can help seniors remain independent and in their own homes.
+
+4. Fall Alert Systems also provide assurance to adult children, who know that if a parent falls, or suffers a more severe medical emergency medical help will be summoned swiftly.</p>
+      <!--<button class="button" style="background-color:red">Read More</button>-->
+    </div>
+  </div>
+</div>
+
+<!-- The App Section -->
+<div class="container2">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:#c83200"><b>How use it?</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Let's see</b></h1>
+      <p> The human fall detection systems were initially distinguished by the type of devices and sensors used.10–13 Systems using wearable devices must be worn by a person under or over their clothes. They include different sensors such as gyroscopes, accelerometers, tilt-meters, myowaves and oscilloscopes.</p>
+      <!--<button class="button">Download Application</button>-->
+    </div>
+    <div class="column-33">
+        <img src="/static/fall3.jpg" width="835" height="471" >
+    </div>
+  </div>
+</div>
+ </div>
+
+  <style>
+<!--* {-->
+<!--  box-sizing:border-box;-->
+<!--}-->
+
+body2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container2 {
+  padding: 64px;
+}
+
+.container2 p{
+  color:#ffffff;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
