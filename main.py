@@ -83,10 +83,10 @@ def hello_world():
 def home():
     return render_template('home.html')
 
-@app.route('/HAD/register')
+@app.route('/reg')
 def reg():
     return render_template('register.html')
-    print("yes i am working")
+    
     
 @app.route('/my')
 def mylink():
