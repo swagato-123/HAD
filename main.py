@@ -83,10 +83,11 @@ def hello_world():
 def home():
     return render_template('home.html')
 
-@app.route('/HAD/register.html')
+@app.route('/register')
 def reg():
     return render_template('register.html')
-
+    print("yes i am working")
+    
 @app.route('/my')
 def mylink():
     #file = open(r'G:\My Drive\Final year project\Human-Fall-Detection using YoloV7 Pose estimation model 2','r').read()
